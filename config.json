@@ -15,14 +15,10 @@
   "PAUSED": false,
   {
   "BACK_COLOR": {
-    "r": 0,    // 255 se 0 karein
-    "g": 0,    // 255 se 0 karein
-    "b": 0     // 255 se 0 karein
+    "r": 0,    
+    "g": 0,  
+    "b": 0     
   },
-  
-
-
-
   
   "TRANSPARENT": false,
   "BLOOM": false,
