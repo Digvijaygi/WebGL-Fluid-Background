@@ -13,12 +13,7 @@
   "COLORFUL": true,
   "COLOR_UPDATE_SPEED": 10,
   "PAUSED": false,
-  {
-  "BACK_COLOR": {
-    "r": 225,    
-    "g": 225,  
-    "b": 225     
-  },
+  "BACK_COLOR": { "r": 20, "g": 10, "b": 40 }
   
   "TRANSPARENT": false,
   "BLOOM": false,
