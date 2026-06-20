@@ -47,7 +47,7 @@ const canvas = document.getElementsByTagName("canvas")[0];
 resizeCanvas();
 
 // Set the properties from the config file
-fetch("config.json")
+fetch(window.location.pathname.includes('vercel') ? './config.json' : 'config.json')
   .then((response) => response.json())
   .then((config) => {
     runSimulation(config);
