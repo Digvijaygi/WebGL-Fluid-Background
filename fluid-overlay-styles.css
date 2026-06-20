@@ -14,7 +14,7 @@ body {
   height: 100%; /* Important: Full height */
   width: 100%; /* Important: Full width */
   overflow: hidden; /* No scrolling - fluid background full screen */
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 /* The animated region - Full screen always */
