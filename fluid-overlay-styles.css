@@ -19,7 +19,7 @@ body {
 
 /* The animated region - Full screen always */
 canvas {
-  position: fixed; /* Fixed position to cover entire viewport */
+  position: relative; /* Fixed position to cover entire viewport */
   top: 0;
   left: 0;
   width: 100vw; /* Full viewport width */
