@@ -27,25 +27,15 @@ SOFTWARE.
 
 // Simulation section
 
-function resizeCanvas() {
-  // Get the actual viewport size
-  let width = window.innerWidth;
-  let height = window.innerHeight;
-  
-  // Apply device pixel ratio for sharp rendering
-  let pixelRatio = window.devicePixelRatio || 1;
-  let scaledWidth = Math.floor(width * pixelRatio);
-  let scaledHeight = Math.floor(height * pixelRatio);
-  
-  if (canvas.width != scaledWidth || canvas.height != scaledHeight) {
-    canvas.width = scaledWidth;
-    canvas.height = scaledHeight;
-    // Update canvas style to fill viewport
-    canvas.style.width = width + 'px';
-    canvas.style.height = height + 'px';
-    return true;
-  }
-  return false;
+function resizeCanvas () {
+    let width = scaleByPixelRatio(canvas.clientWidth);
+    let height = scaleByPixelRatio(canvas.clientHeight);
+    if (canvas.width != width || canvas.height != height) {
+        canvas.width = width;
+        canvas.height = height;
+        return true;
+    }
+    return false;
 }
 
 function scaleByPixelRatio(input) {
